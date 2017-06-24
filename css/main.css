@@ -1,0 +1,16 @@
+@charset utf-8;
+
+/* Upper part of the page */
+img#little_callie {
+	width: 80px;
+	height: 80px;
+}
+
+img#screenshot {
+	display: block;
+	margin: 0 auto;
+	width: 800px;
+	height: 800px;
+}
+
+/* End of the upper part of the page css */
