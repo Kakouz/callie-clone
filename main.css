@@ -1,22 +1,74 @@
+body{
+  font: Helvetica Neue ,Helvetica,Arial,sans-serif;
+}
+/* No idea why, but without this, the css of sunshine disapears? */
+.jumbotron {
+	padding: 0;
+}
 
+.gimmie-space {
+	margin-bottom: 40px;
+}
+.sunshine {
+  padding-top: 100px;
+	padding-bottom: 40px;
+	width: 100%;
+	background: rgba(248,80,50);
+	background: -webkit-linear-gradient(left top, rgba(248,80,50,1) 0%, rgba(240,181,93,1) 100%);
+	background: -o-linear-gradient(bottom right, rgba(248,80,50,1) 0%, rgba(240,181,93,1) 100%);
+	background: -moz-linear-gradient(bottom right, rgba(248,80,50,1) 0%, rgba(240,181,93,1) 100%);
+	background: linear-gradient(to bottom right, rgba(248,80,50,1) 0%, rgba(240,181,93,1) 100%);
+  color: rgb(240, 248, 255);
+}
 
-body {
-  margin-top: 60px;
-  font-family: 'Alegreya SC', sans-serif;
-  color: midnightblue;
-  background: linear-gradient(to bottom right, orange, yellow);
-  background-size: cover;
-  background-attachment: top;
-  background-position: center;
-  background-repeat: no-repeat
+.juicy{
+  padding-top: 100px;
+  min-height: 500px;
+	width: 100%;
+	background: rgba(0,13,255);
+	background: -webkit-linear-gradient(left bottom, rgba(0,13,255,1) 0%, rgba(186,0,140,1) 100%);
+	background: -o-linear-gradient(top right, rgba(0,13,255,1) 0%, rgba(186,0,140,1) 100%);
+	background: -moz-linear-gradient(top right, rgba(0,13,255,1) 0%, rgba(186,0,140,1) 100%);
+	background: linear-gradient(to top right, rgba(0,13,255,1) 0%, rgba(186,0,140,1) 100%);
+  color: rgb(240, 248, 255);
+}
+.juicy ul {
+  padding-top: 50px;
+}
+.juicy li {
+	list-style: none;
+  margin-bottom: 10px;
+}
+.middle-part {
+  min-height: 100px;
+}
+#slackButton {
+	height: 40px;
+	width: 139px;
+}
+.get-started {
+	color: cyan;
+}
+.get-started:hover {
+	color: magenta;
+}
+.do-stuff, .do-stuff:hover{
+  color: white;
+}
+.border-box {
+    border: 2px solid white;
+    padding: 50px;
+    max-width: 235px;
 }
 
 /* Upper part of the page */
-img#little_callie {
-	width: 80px;
-	height: 80px;
+img#doggo {
+	position: absolute;
+	height: 90px;
+	width: auto;
+	margin-left: 20px;
+	top: 70px;
 }
-
 img#screenshot {
 	display: block;
 	margin: 0 auto;
