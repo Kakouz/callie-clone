@@ -45,6 +45,7 @@ body{
 #slackButton {
 	height: 40px;
 	width: 139px;
+  background: pink;
 }
 .get-started {
 	color: cyan;
