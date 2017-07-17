@@ -1,104 +1,96 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Callie - A Countdown Slack Bot</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="./css/main.css">
-		<link rel="shortcut icon" href="img/favicon.ico">
+
+<head>
+  <meta charset="utf-8">
+  <title>Callie - A Countdown Slack Bot</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
   </head>
-  <body>
-	<!-- Responsible for the upper part of the page, ends at the button 'Add to Slack' button -->
-	<div id = "Upper-Part">
-		<h1>Meet Callie, <br>
-		a countdown bot for Slack.  <img src="img/corgigirl.png" id="little_callie" alt="Callie, the calendar dog"/> </h1>
-		
-		<h3>Callie the Calendar Corgi keeps track of events, deadlines, and more for your team with a few simple commands. Arf!</h3>
-		
-		<div id = "unordered-list"> <!-- This div here is for the first unordered-list -->
-		<p><strong>UPDATES</strong>: Callie was last updated on April 10th, 2017.</p>
-		
-		<ul>
-			<li>Some countdowns saved with bad data were unreachable via slack commands. Those are fixed and working now.</li>
-			<li>Scheduled reminders will also now delete events if they happened already or happen on the day of the reminder.</li>
-			<li>Error messages are more verbose. Especially if you try saving a countdown with brackets.</li>
-		</ul>
-		</div> <!-- The div for the first unordered-list ends here -->
-		
-		<p>
-			This is a one-man side project, so I appreciate the folks who have reached out via email to let me know when they've encountered any issues or bugs. Please continue to do so, and I'll work to keep Callie as consistent and reliable as possible.
-		</p>
-		
-		<!-- BIG SLACK IMAGE SHOULD ENTER HERE, BETWEEN THIS COMMENT -->
-		<div>
-		<img id="screenshot" src="img/callie-screenshot.png" alt="A screenshot of Callie in action"/>
-		</div>
-		<!-- BIG SLACK IMAGE SHOULD ENTER HERE, BETWEEN THIS COMMENT -->
-		
-		<!-- Add to slack button should be here under the image -->
-		<button>Add to Slack</button>
-	</div>
-	<!-- End of the upper part of the page, ending at the 'Add to Slack' button -->
-	
-	
-	
-	<!-- Responsible for the middle part of the page, ends after the text on the white background -->
-	<div id = "Middle-Part" class = "container">
-	
-		<div class="col-md-4 breakdown-panel">	
-			<span class="glyphicon full-glyph glyphicon-ok-sign" aria-hidden="true"></span>
-				<h3>Keep It Simple</h3>
-				<p>
-					Just a few commands gives Callie all she needs to keep you and your team informed of upcoming events, trips, or deadlines.
-				</p>
-		</div>
-		
-		<div class="col-md-4 breakdown-panel">
-			<span class="glyphicon full-glyph glyphicon-calendar" aria-hidden="true"></span>
-			<h3>Automated Reminders</h3>
-				<p>
-				Let Callie give you weekly or daily updates on the countdown, and update your settings whenever you like.
-				</p>
-		</div>
-		
-		<div class="col-md-4 breakdown-panel">
-			<span class="glyphicon full-glyph glyphicon-heart" aria-hidden="true"></span>
-			<h3>It's a Cute Dog</h3>
-				<p>
-					That's what we're all here for, really. A cute dog that knows when your stuff is coming up. Right?
-				</p>
-		</div>
-	</div>
-	<!-- End of the middle part of the page, ends after the text on the white background  -->
-	
-	
-	
-	<!-- Responsible for the bottom part of the page, ends after the finishing texts -->
-	<div id = "Bottom-Part">
-		<h1>Other Fun Things You Might Do</h1>
-		<a href ="#">
-			<h3>1. Install Callie</h3>
-		</a>
-		<a href ="#">
-			<h3>2. Send an Email</h3>
-		</a>
-		<a href ="#">
-			<h3>3. Fork a Repo</h3>
-		</a>
-		<a href ="#">
-			<h3>4. Learn 'bout privacy</h3>
-		</a>
-		<a href ="#">
-			<h3>5. Donate a Dollar</h3>		
-		</a>
-		<p>
-			It'll keep the lights on for Callie. Thanks!
-		</p>
-	</div>
-	<!-- End of the bottom part of the page, ends after the finishing texts -->
-		
-	<br>
-    <p>Cloning done with collaboration</p>
-    <p>@Kakouz and @unabashedley</p>
-  </body>
+
+<body>
+  <!-- Responsible for the upper part of the page, ends at the button 'Add to Slack' button -->
+<div class="jumbotron">
+  <div class="container sunshine gimmie-space">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+    <h1>Meet Callie, <br> a countdown bot for Slack.
+      <img id="doggo" src="img/corgigirl.png" alt="Callie, the calendar dog"/> </h1>
+    <h3>Callie the Calendar Corgi keeps track of events, deadlines, and more for your team with a few simple commands. Arf!</h3>
+    <div id="unordered-list">
+      <!-- This div here is for the first unordered-list -->
+      <p><strong>UPDATES</strong>: Callie was last updated on April 10th, 2017.</p>
+      <ul>
+        <li>Some countdowns saved with bad data were unreachable via slack commands. Those are fixed and
+          working now.</li>
+        <li>Scheduled reminders will also now delete events if they happened already or happen on the day
+          of the reminder.</li>
+        <li>Error messages are more verbose. Especially if you try saving a countdown with brackets.</li>
+      </ul>
+    </div>
+    <p>
+      This is a one-man side project, so I appreciate the folks who have reached out via email to let me know
+      when they've encountered any issues or bugs. Please continue to do so, and I'll work to keep Callie
+      as consistent and reliable as possible.
+    </p>
+  <!-- So, I don't see a screenshot? I'm on my little laptop so maybe that's why - Left out cuz easier to see rest-->
+<!--  <div>    <img id="screenshot" src="img/callie-screenshot.png" alt="A screenshot of Callie in action" /> -->
+
+  <!-- needs proper link/image -->
+  <div class="gimmie-space text-center">
+    <button id="slackButton">Add to Slack</button>
+  </div>
+  </div>
+</div>
+</div>
+  <!-- End of the upper part of the page, ending at the 'Add to Slack' button -->
+  <!-- I cahanged the span to an i to get the fa to be centerable... wondering why you had them as span?-->
+  <div class="container gimmie-space middle-part">
+   <div class="row text-center">
+    <div class="col-md-4 col-md-offset-2 breakdown-panel text-center">
+      <i class="fa fa-check-circle fa-3x" aria-hidden="true"></i>
+      <h3>Keep It Simple</h3>
+      <p>Just a few commands gives Callie all she needs to keep you and your team informed of upcoming events,
+        trips, or deadlines.</p>
+    </div>
+
+    <div class="col-md-4 breakdown-panel text-center">
+      <i class="fa fa-calendar fa-3x" aria-hidden="true"></i>
+      <h3>Automated Reminders</h3>
+      <p>Let Callie give you weekly or daily updates on the countdown, and update your settings whenever you like.</p>
+    </div>
+    <div class="col-md-4 breakdown-panel text-center">
+        <i class="fa fa-heart fa-3x " aria-hidden="true"></i>
+      <h3>It's a Cute Dog</h3>
+      <p>That's what we're all here for, really. A cute dog that knows when your stuff is coming up. Right?</p>
+    </div>
+</div>
+</div>
+  <!-- End of the middle part of the page, ends after the text on the white background  -->
+  <!-- Responsible for the bottom part of the page, ends after the finishing texts -->
+  <div class="container juicy">
+    <div class="row">
+      <div class="col-md-2 col-md-offset-4">
+        <h1 class="border-box">Other Fun Things You Might Do</h1>
+            </div>
+  <div class= "col-md-3"><ul>
+    <li><a href="#" class= "get-started"><h3>1. Install Callie</a></h3></li>
+    <li><a href="#" class= "do-stuff"><h3>2. Send an Email</a></h3></li>
+    <li><a href="#" class= "do-stuff"><h3>3. Fork a Repo</a></h3></li>
+    <li><a href="#" class= "do-stuff"><h3>4. Learn 'bout privacy</a></h3></li>
+    <li><a href="#" class= "do-stuff"><h3>5. Donate a Dollar</a></h3></li>
+    <p>It'll keep the lights on for Callie. Thanks!</p>
+  </div>
+  </div>
+</div>
+  <!-- End of the bottom part of the page, ends after the finishing texts -->
+
+  <br>
+  <p>Cloning done with collaboration</p>
+  <p>@Kakouz and @unabashedley</p>
+</div>
+</body>
+
 </html>
